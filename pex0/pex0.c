@@ -14,24 +14,24 @@ int main() {
     drawTree();
     drawCat();
 
-    int h;
-    int m;
-    int f;
+    double h;
+    double m;
+    double f;
     printf("Homework (x / 80): ");
-    scanf("%d", &h);
+    scanf("%lf", &h);
     printf("Midterm (x / 40): ");
-    scanf("%d", &m);
+    scanf("%lf", &m);
     printf("Final (x / 70): ");
-    scanf("%d", &f);
-    printf("Total percentage: %.2lf%%", coursePercentage(h/80.0, m/40.0, f/70.0));
+    scanf("%lf", &f);
+    printf("Total percentage: %.2lf%%", coursePercentage(h, m, f));
 }
 
 void drawTree() {
-    printf("   *   \n");
-    printf("  ***  \n");
-    printf(" ***** \n");
+    printf("   *\n");
+    printf("  ***\n");
+    printf(" *****\n");
     printf("*******\n");
-    printf("  ***  \n\n");
+    printf("  ***\n\n");
 }
 
 void drawCat() {
@@ -42,5 +42,5 @@ void drawCat() {
 }
 
 double coursePercentage(double h, double m, double f) {
-    return (h * .2 + m * .3 + f * .5) * 100;
+    return (h/80*.2 + m/40*.3 + f/70*.5)*100;
 }
