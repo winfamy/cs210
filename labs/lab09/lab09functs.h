@@ -9,4 +9,4 @@ double volumeCylinder(double, double);
 double volumeBox(double, double, double);
 double degToRad(double);
 
-#endif //C_LAB09FUNCTS_H
+#endif // C_LAB09FUNCTS_H
