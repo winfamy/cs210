@@ -15,10 +15,10 @@
 #ifndef C_PEX1_H
 #define C_PEX1_H
 
-void drawDie(int pips);
 int rollDie();
-void turnStatus(int die, int player, int currentTotal, int score0, int score1);
-void gameStatus(int player, int score0, int score1);
-int totalScore(int score, int turnTotal);
+void drawDie(int);
+int totalScore(int, int);
+void gameStatus(int, int, int);
+void turnStatus(int, int, int, int, int);
 
 #endif //C_PEX1_H

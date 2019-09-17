@@ -113,7 +113,7 @@ void drawDie(int pips) {
 	char dieFrame[] = " ------- \n";
 
 	// array of die strings
-	char die[6][256] = {
+	char die[6][40] = {
 		"|       |\n|   *   |\n|       |\n",
 		"| *     |\n|       |\n|     * |\n",
 		"| *     |\n|   *   |\n|     * |\n",
