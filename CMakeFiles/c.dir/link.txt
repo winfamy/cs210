@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc  -Wall -Werror -o a.out -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/c.dir/pex/pex1/pex1.c.o CMakeFiles/c.dir/proj/lws-server.c.o CMakeFiles/c.dir/proj/lws-protocol.c.o  -o c 
