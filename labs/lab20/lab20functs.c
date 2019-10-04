@@ -25,7 +25,6 @@ void printTable(double degFlow, double degFhigh, double degFstep) {
 	fprintf(stdout, "|-----------------------------|\n");
 }
 
-
 double getInput(double * min, double * max, double * stepSize) {
 	int minGood = 0;
 	int maxGood = 0;
@@ -72,6 +71,7 @@ bool again() {
 	if (c == 'y' || c == 'Y') {
 		return true;
 	}
+
 
 	return false;
 }
