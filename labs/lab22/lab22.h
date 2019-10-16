@@ -8,12 +8,11 @@
 #ifndef USAFA_CS210_F18_STUDENT_LAB21_H
 #define USAFA_CS210_F18_STUDENT_LAB21_H
 
-#define MAXSTUDENTS 100
+#define MAXSTUDENTS 97
 
 // define our cadet info type for later use
-typedef struct {
+typedef struct MyCadetInfo {
     char name[50];
-    int age;
     int squad;
     int classYear;
 } MyCadetInfo;

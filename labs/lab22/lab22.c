@@ -79,13 +79,12 @@ int main() {
      * and printing the results.
     */
 	updateClassYearNameBlk(cadetRecs, numCadets);
-	printf("%s\n", readCadetBlk(91).name);
 
     return 0;
 }
 
 MyCadetInfo readCadetBlk(int location) {
-	FILE * in = fopen("./lab22Data.dat", "r");
+	FILE * in = fopen("lab22Data.dat", "r");
 	MyCadetInfo cadet;
 	if (in == NULL) {
 		printf("Error reading data file: %s.\n", strerror(errno));
@@ -109,7 +108,7 @@ MyCadetInfo readCadetBlk(int location) {
 int writeDataBlk(MyCadetInfo cadetRecords[], int numCadets) {
 
     // Open an output file for writing
-    FILE *out = fopen("./lab22Data.dat", "w");
+    FILE *out = fopen("lab22Data.dat", "w");
     if (out == NULL) {
 	    printf("Error creating data file: %s.\n", strerror(errno));
 	    exit(1);
@@ -134,7 +133,7 @@ int writeDataBlk(MyCadetInfo cadetRecords[], int numCadets) {
 int writeCadetBlk(MyCadetInfo* cadet, int location) {
 
     // Open an output file for writing
-    FILE *out = fopen("./lab22Data.dat", "r+");
+    FILE *out = fopen("lab22Data.dat", "r+");
     if (out == NULL) {
         printf("Error creating data file: %s.\n", strerror(errno));
         exit(1);
@@ -154,7 +153,7 @@ int writeCadetBlk(MyCadetInfo* cadet, int location) {
  */
 int getDataText(MyCadetInfo cadetRecords[]) {
     // Open an input file for reading
-    FILE *in = fopen("./lsn22Data.txt", "r");
+    FILE *in = fopen("lsn22Data.txt", "r");
     if (in == NULL) {
         printf("Error opening data file: %s.\n", strerror(errno));
         exit(1);
