@@ -24,7 +24,7 @@ int main() {
 	USAFBaseData ** ptrs = malloc(sizeof(USAFBaseData *) * numLines);
 	for (int i = 0; i < numLines; ++i) {
 		ptrs[i] = malloc(sizeof(USAFBaseData));
-	}`
+	}
 
 	readFile(FILENAME, ptrs, numLines);
 	printData(ptrs, numLines);
