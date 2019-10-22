@@ -24,7 +24,7 @@ int main() {
 	USAFBaseData ** ptrs = malloc(sizeof(USAFBaseData *) * numLines);
 	for (int i = 0; i < numLines; ++i) {
 		ptrs[i] = malloc(sizeof(USAFBaseData));
-	}
+	}`
 
 	readFile(FILENAME, ptrs, numLines);
 	printData(ptrs, numLines);
@@ -63,11 +63,6 @@ void readFile(char filename[], USAFBaseData** baseStruct, int lines) {
 	char t[100]; //throwaway
 	fgets(t, 1000, fp); // ignore first line
 	for (int i = 0; i < lines; ++i) {
-		//	char baseName[50];
-		//	int bldgsOwned;
-		//	int structsOwned;
-		//	char city[50];
-		//	char state[30];
 		fscanf(fp, "%[^\n,],", baseStruct[i]->baseName);
 		fscanf(fp, "%d,", &baseStruct[i]->bldgsOwned);
 		fscanf(fp, "%d,", &baseStruct[i]->structsOwned);
