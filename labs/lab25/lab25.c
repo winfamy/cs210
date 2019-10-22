@@ -61,14 +61,14 @@ void readFile(char filename[], USAFBaseData** baseStruct, int lines) {
 	}
 
 	char t[100]; //throwaway
-	fgets(t, 1000, fp); // ignore first line
+	fgets(t, 100, fp); // ignore first line
 	for (int i = 0; i < lines; ++i) {
 		fscanf(fp, "%[^\n,],", baseStruct[i]->baseName);
 		fscanf(fp, "%d,", &baseStruct[i]->bldgsOwned);
 		fscanf(fp, "%d,", &baseStruct[i]->structsOwned);
 		fscanf(fp, "%[^\n,],", baseStruct[i]->city);
 		fscanf(fp, "%[^\n,],", baseStruct[i]->state);
-		fgets(t, 1000, fp); // reset to new line
+		fgets(t, 100, fp); // reset to new line
 	}
 }
 
