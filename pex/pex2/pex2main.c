@@ -3,7 +3,12 @@
 * Name: Grady Phillips, 15 Oct, 2019
 * Section: M1A
 * Project: 
-* Purpose: 
+* Purpose:
+	Demonstrate file I/O, structs, and string manipulation
+	Understand the relationship between C header files and C implementation files
+	Understand function calls and the power of code reuse
+	Basic understanding of hamming distance and similarity scores, and their relationship to genome sequences
+* Documentation: None
 * ===========================================================
 */
 
