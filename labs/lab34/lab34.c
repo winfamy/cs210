@@ -8,6 +8,7 @@
 
 #include "lab34.h"
 #include <string.h>
+#include <stdint.h>
 
 int main() {
 
